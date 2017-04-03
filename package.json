@@ -1,0 +1,39 @@
+{
+    "name":        "gemstone-config-htmlhint",
+    "homepage":    "http://github.com/gemstonejs/gemstone-config-htmlhint",
+    "description": "HTMLHint Configuration for Gemstone JavaScript Technology Stack",
+    "version":     "0.9.0",
+    "license":     "Apache-2.0",
+    "author": {
+        "name":    "Gemstone Project",
+        "url":     "http://gemstonejs.com"
+    },
+    "keywords": [
+        "gemstone", "htmlhint", "config"
+    ],
+    "repository": {
+        "type": "git",
+        "url":  "git://github.com/gemstonejs/gemstone-config-htmlhint.git"
+    },
+    "bugs": {
+        "url":  "http://github.com/gemstonejs/gemstone-config-htmlhint/issues"
+    },
+    "devDependencies": {
+        "eslint":                         "~3.19.0",
+        "eslint-config-standard":         "~7.1.0",
+        "eslint-plugin-standard":         "~2.1.1",
+        "eslint-plugin-promise":          "~3.5.0",
+        "eslint-plugin-import":           "~2.2.0",
+        "babel-eslint":                   "~7.2.1"
+    },
+    "peerDependencies": {
+        "htmlhint":                       "*"
+    },
+    "engines": {
+        "node":                           ">=6.0.0"
+    },
+    "scripts": {
+        "prepublish": "eslint --config eslint.yaml gemstone-config-htmlhint.js"
+    },
+    "main": "./gemstone-config-htmlhint.js"
+}

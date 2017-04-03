@@ -14,6 +14,7 @@ About
 
 This is the [HTMLHint](http://htmlhint.com/) configuration for HTML files in the
 [Gemstone JavaScript Technology Stack](http://gemstonejs.com).
+It consists of both the plain configuration and two new linting rules.
 
 Copyright &amp; License
 -----------------------

@@ -12,10 +12,10 @@ module.exports = function (htmlhint) {
         description: "The 'id' attribute is not allowed, because of UI fragment reusability.",
         init: function (parser, reporter /*, options */) {
             parser.addListener("tagstart", (event) => {
-                let attrs = event.attrs
-                let col = event.col + 1 + event.tagName.length
+                const attrs = event.attrs
+                const col = event.col + 1 + event.tagName.length
                 for (let i = 0, len = attrs.length; i < len; i++) {
-                    let attr = attrs[i]
+                    const attr = attrs[i]
                     if (attr.name.toLowerCase() === "id")
                         reporter.error("id attribute not allowed because of UI fragment reusability",
                             event.line, col + 1 + attr.index, this, event.raw)
